@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  /* Colors */
+  --clr-white: hsl(0 0% 100%);
+  --clr-gray: hsl(212 45% 89%);
+  --clr-blue: hsl(220 15% 55%);
+  --clr-dark-blue: hsl(218 44% 22%);
+
+  /* Typography */
+  --ff-sans-serif: 'Outfit', sans-serif;
+
+  --fs-h1: 1.5rem;
+  --fs-p: 0.9375rem;
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+p,
+body,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Styles */
+body {
+  background-color: var(--clr-blue);
+  font-family: var(--ff-sans-serif);
+  text-align: center;
+}
+
+h1 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h1);
+}
+
+p {
+  font-weight: var(--fw-normal);
+  font-size: var(--fs-p);
+  color: var(--clr-blue);
+}
+
+.card {
+  max-width: 20rem;
+  margin-inline: auto;
+  background-color: var(--clr-white);
+  padding: 1rem;
+}
+
+.card > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.card > :last-child {
+  margin-bottom: 1.5rem;
+}
+
+.card,
+.card > img {
+  border-radius: 0.75rem;
+}
+
+.card h1,
+.card p {
+  max-width: 95%;
+  margin-inline: auto;
+}
